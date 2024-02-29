@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sports Survey</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1 id="title">Sports Survey</h1>
+  <p id="description">Thank you for taking the time to fill out our survey!</p>
+  <form id="survey-form">
+  <fieldset>
+    <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required></label>
+    <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required></label> 
+    <label id="number-label">Age: <input type="number" id="number" placeholder="Age" required min="10" max="100"></label>
+  </fieldset>
+  <fieldset>
+  <label>What is your favorite sport?
+   <hr>
+   <select id="dropdown">
+    <option value="">(select one)</option>
+    <option value="1">Basketball</option>
+    <option value="2">Baseball</option>
+    <option value="3">Football</option>
+    <option value="4">Hockey</option>
+    <option value="5">Soccer</option>
+   </select>
+  </label>
+  </fieldset>
+  <fieldset>
+  <label>What activities do you engage in? (regarding your sport)
+  <hr>
+  <input type="checkbox" value="play" class="inline" checked /> Playing
+  <input type="checkbox" value="watch" class="inline" /> Watching
+  <input type="checkbox" value="coach" class="inline" /> Coaching
+  <input type="checkbox" value="ref" class="inline" /> Refereeing
+  </label>
+  </fieldset>
+  <fieldset>
+    <label>How often do you play your favorite sport?
+    <hr>
+    <input type="radio" name="practice" class="inline" checked value="daily" /> Daily
+    <input type="radio" name="practice" class="inline" value="weekly" /> Weekly
+    <input type="radio" name="practice" class="inline" value="monthly" /> Monthly
+    </label>
+  </fieldset>
+  <fieldset>
+  <label>Any comments or suggestions?</label>
+  <textarea placeholder="Enter your comment here..." rows="5" cols="40"></textarea>
+  </fieldset>
+<input id="submit" type="submit" value="Submit" />
+
+  </form>
+</body>
+</html>
